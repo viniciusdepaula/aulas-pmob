@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ActivityDataIntent</string>
+    <string name="message">A mensagem recebida foi:</string>
+</resources>
