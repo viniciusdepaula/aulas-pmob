@@ -21,7 +21,7 @@ public class ActivityA extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                startActivity();
+                iniciarActivity();
             }
         });
     }
@@ -62,9 +62,9 @@ public class ActivityA extends AppCompatActivity {
     }
 
     /** Chamado para iniciar uma nova activity */
-    public void startActivity() {
+    public void iniciarActivity() {
 
-        Intent intent = new Intent(this, ActivityB.class);
+        Intent intent = new Intent(ActivityA.this, ActivityB.class);
         startActivity(intent);
     }
 }
