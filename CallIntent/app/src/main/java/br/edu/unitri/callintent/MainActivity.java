@@ -61,7 +61,8 @@ public class MainActivity extends AppCompatActivity {
              * O método requestPermissions verifica se a permissão em questão foi concedita ou não pelo usuário
              */
 
-            if (checkSelfPermission(android.Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED) {
+            if (checkSelfPermission(android.Manifest.permission.CALL_PHONE) ==
+                    PackageManager.PERMISSION_GRANTED) {
 
                 makeCall();
 
@@ -73,13 +74,16 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "Permission is revoked");
 
                 /**
-                 * O método requestPermissions requisita ao usuário a permissão a ser concedida para a aplicação e recebe os seguinte parâmetros:
+                 * O método requestPermissions requisita ao usuário a permissão
+                 *  a ser concedida para a aplicação e recebe os seguinte parâmetros:
                  *  A activity que responsável por solicitar a permissão
                  *  A permissão a ser concedida
                  *  Um código de request setado pela aplicação que será utilizado pelo callback onRequestPermissionsResult()
                  */
 
-                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE}, 1);
+                ActivityCompat.requestPermissions(this,
+                        new String[]{Manifest.permission.CALL_PHONE},
+                        1);
                 return false;
             }
         }
@@ -96,25 +100,34 @@ public class MainActivity extends AppCompatActivity {
 
 
     /**
-     * O método onRequestPermissionsResult é chamado indepentente do usuário conceder ou não a permissão
+     * O método onRequestPermissionsResult é chamado indepentente do
+     * usuário conceder ou não a permissão
      *
-     * @param requestCode é o código do request passado no método requestPermissions(android.app.Activity, String[], int)
+     * @param requestCode é o código do request passado
+     *                    no método
+     *                    requestPermissions(android.app.Activity, String[], int)
      */
 
     @Override
-    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+    public void onRequestPermissionsResult(int requestCode,
+                                           String permissions[],
+                                           int[] grantResults) {
 
         switch (requestCode) {
 
             case 1: {
 
-                if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED) {
+                if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE)
+                        == PackageManager.PERMISSION_GRANTED) {
 
                     makeCall();
 
                 } else {
 
-                    Toast.makeText(getApplicationContext(), "Permission denied", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(
+                            getApplicationContext(),
+                            "Permission denied",
+                            Toast.LENGTH_SHORT).show();
                 }
                 return;
             }
@@ -126,7 +139,9 @@ public class MainActivity extends AppCompatActivity {
         Intent callIntent = new Intent(Intent.ACTION_CALL);
         callIntent.setData(Uri.parse("tel:" + phoneNumber));
 
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(
+                this, Manifest.permission.CALL_PHONE) ==
+                PackageManager.PERMISSION_GRANTED) {
 
             startActivity(callIntent);
         }
