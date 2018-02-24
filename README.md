@@ -7,6 +7,7 @@ Slides utilizados na disciplina de programação para dispositivos móveis do cu
 - Slides [PMOB-2.1-Intents-continuação](https://github.com/viniciusdepaula/aulas-pmob/blob/master/pdf/PMOB-2.1-Intents-continua%C3%A7%C3%A3o.pdf) - Interagindo com outros apps utilizando Intents
 - Slides [PMOB-2.2-Permissões.pdf](https://github.com/viniciusdepaula/aulas-pmob/blob/master/pdf/PMOB-2.2-Permiss%C3%B5es.pdf) - Manipulando permissões de execução
 - Slides [PMOB-2.3-Menus.pdf](https://github.com/viniciusdepaula/aulas-pmob/blob/master/pdf/PMOB-2.3-Menus.pdf) - Iniciando com o OptionsMenu
+- Slides [PMOB-3.1-PMOB-3.1-ComponentesdeTela.pdf](https://github.com/viniciusdepaula/aulas-pmob/blob/master/pdf/PMOB-3.1-ComponentesdeTela.pdf) - Componentes de Tela
 
 
 Links auxiliares:
