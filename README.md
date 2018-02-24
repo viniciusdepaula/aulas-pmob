@@ -9,6 +9,10 @@ Slides utilizados na disciplina de programação para dispositivos móveis do cu
 - Slides [PMOB-2.3-Menus.pdf](https://github.com/viniciusdepaula/aulas-pmob/blob/master/pdf/PMOB-2.3-Menus.pdf) - Iniciando com o OptionsMenu
 - Slides [PMOB-3.1-PMOB-3.1-ComponentesdeTela.pdf](https://github.com/viniciusdepaula/aulas-pmob/blob/master/pdf/PMOB-3.1-ComponentesdeTela.pdf) - Componentes de Tela
 
+Lista de Exercícios:
+
+- Lista de Exercícios I [PMOB-ListadeExercíciosI.pdf.pdf](https://github.com/viniciusdepaula/aulas-pmob/blob/master/pdf/PMOB-ListadeExercíciosI.pdf.pdf) - 
+
 
 Links auxiliares:
 
