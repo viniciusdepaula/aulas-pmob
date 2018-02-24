@@ -11,7 +11,7 @@ Slides utilizados na disciplina de programação para dispositivos móveis do cu
 
 Lista de Exercícios:
 
-- Lista de Exercícios I [PMOB-ListadeExercíciosI.pdf.pdf](https://github.com/viniciusdepaula/aulas-pmob/blob/master/pdf/PMOB-ListadeExercíciosI.pdf.pdf) - 
+- Lista de Exercícios I [PMOB-ListadeExercíciosI.pdf.pdf](https://github.com/viniciusdepaula/aulas-pmob/blob/master/pdf/PMOB-ListadeExerc%C3%ADciosI.pdf) - 
 
 
 Links auxiliares:
