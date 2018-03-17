@@ -10,6 +10,7 @@ Materiais utilizados na disciplina de programação para dispositivos móveis do
 - Slides [PMOB-2.2-Permissões.pdf](https://github.com/viniciusdepaula/aulas-pmob/blob/master/pdf/PMOB-2.2-Permiss%C3%B5es.pdf) - Manipulando permissões de execução
 - Slides [PMOB-2.3-Menus.pdf](https://github.com/viniciusdepaula/aulas-pmob/blob/master/pdf/PMOB-2.3-Menus.pdf) - Iniciando com o OptionsMenu
 - Slides [PMOB-3.1-PMOB-3.1-ComponentesdeTela.pdf](https://github.com/viniciusdepaula/aulas-pmob/blob/master/pdf/PMOB-3.1-ComponentesdeTela.pdf) - Componentes de Tela
+- Slides [PMOB-4.0-PMOB-4.0-ChamadaAPIs.pdf](https://github.com/viniciusdepaula/aulas-pmob/blob/master/pdf/PMOB-4.0-ChamandoAPIs.pdf) - Chamada de APIs no Android
 
 **Lista de Exercícios**
 
