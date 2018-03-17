@@ -1,0 +1,30 @@
+    /*
+    * To get a Bitmap image from the URL received
+    * @imageUrl image URL
+    */
+    public Bitmap getBitmapfromUrl(String imageUrl) {
+
+        try {
+
+            if("".equals(imageUrl)) {
+
+                Log.d(TAG, "Big picture image is null");
+                return null;
+
+            } else {
+
+                URL url = new URL(imageUrl);
+                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                connection.setDoInput(true);
+                connection.connect();
+                InputStream input = connection.getInputStream();
+                Bitmap bitmap = BitmapFactory.decodeStream(input);
+                return bitmap;
+            }
+
+        } catch (Exception e) {
+
+            e.printStackTrace();
+            return null;
+        }
+    }
