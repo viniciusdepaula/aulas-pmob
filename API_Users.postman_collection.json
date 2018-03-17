@@ -1,0 +1,256 @@
+{
+	"info": {
+		"name": "API Users",
+		"_postman_id": "7811894d-5ab8-a105-d307-b32f13c01618",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "00. Autentica Usuário",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic MzgxNTc5ZmEtZDI0MC00Mzg3LTkyNTMtZWY2YjgwYTdhMWEwOmM4NDM4M2Y0LTJiMDgtNGJiYy04MjQwLWI0YjQ5YTFlYWQzZQ=="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"jose2@gmail.com\",\n\t\"pass\":\"1234\"\n}\n\n"
+				},
+				"url": {
+					"raw": "http://ec2-34-230-46-185.compute-1.amazonaws.com:8080/v1/users/authenticate",
+					"protocol": "http",
+					"host": [
+						"ec2-34-230-46-185",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users",
+						"authenticate"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "01. Cadastra Usuário",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic MzgxNTc5ZmEtZDI0MC00Mzg3LTkyNTMtZWY2YjgwYTdhMWEwOmM4NDM4M2Y0LTJiMDgtNGJiYy04MjQwLWI0YjQ5YTFlYWQzZQ=="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userName\": \"Jose\",\n\t\"email\": \"jose3@gmail.com\",\n\t\"pass\":\"123\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-34-230-46-185.compute-1.amazonaws.com:8080/v1/users/",
+					"protocol": "http",
+					"host": [
+						"ec2-34-230-46-185",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "02. Atualiza Usuário",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic MzgxNTc5ZmEtZDI0MC00Mzg3LTkyNTMtZWY2YjgwYTdhMWEwOmM4NDM4M2Y0LTJiMDgtNGJiYy04MjQwLWI0YjQ5YTFlYWQzZQ=="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userName\": \"Jose\",\n\t\"email\": \"jose2@gmail.com\",\n\t\"pass\":\"123\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-34-230-46-185.compute-1.amazonaws.com:8080/v1/users/authenticate",
+					"protocol": "http",
+					"host": [
+						"ec2-34-230-46-185",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users",
+						"authenticate"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "03. Recupera Usuário",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic MzgxNTc5ZmEtZDI0MC00Mzg3LTkyNTMtZWY2YjgwYTdhMWEwOmM4NDM4M2Y0LTJiMDgtNGJiYy04MjQwLWI0YjQ5YTFlYWQzZQ=="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"jose2@gmail.com\",\n\t\"pass\":\"1234\"\n}\n\n"
+				},
+				"url": {
+					"raw": "http://ec2-34-230-46-185.compute-1.amazonaws.com:8080/v1/users/12",
+					"protocol": "http",
+					"host": [
+						"ec2-34-230-46-185",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users",
+						"12"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "04. Recupera Usuários",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic MzgxNTc5ZmEtZDI0MC00Mzg3LTkyNTMtZWY2YjgwYTdhMWEwOmM4NDM4M2Y0LTJiMDgtNGJiYy04MjQwLWI0YjQ5YTFlYWQzZQ=="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"jose2@gmail.com\",\n\t\"pass\":\"1234\"\n}\n\n"
+				},
+				"url": {
+					"raw": "http://ec2-34-230-46-185.compute-1.amazonaws.com:8080/v1/users/",
+					"protocol": "http",
+					"host": [
+						"ec2-34-230-46-185",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "05. Remove Usuário",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic MzgxNTc5ZmEtZDI0MC00Mzg3LTkyNTMtZWY2YjgwYTdhMWEwOmM4NDM4M2Y0LTJiMDgtNGJiYy04MjQwLWI0YjQ5YTFlYWQzZQ=="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"jose2@gmail.com\",\n\t\"pass\":\"1234\"\n}\n\n"
+				},
+				"url": {
+					"raw": "http://ec2-34-230-46-185.compute-1.amazonaws.com:8080/v1/users/12",
+					"protocol": "http",
+					"host": [
+						"ec2-34-230-46-185",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"users",
+						"12"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
