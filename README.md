@@ -27,4 +27,5 @@ https://romannurik.github.io/AndroidAssetStudio/index.html
 Geração do ícone de inicialização 
 https://makeappicon.com
 
-
+Documentação Open Weather (apresentação de imagem)
+https://openweathermap.org/weather-conditions
