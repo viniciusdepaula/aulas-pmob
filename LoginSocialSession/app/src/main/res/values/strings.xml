@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LoginSocialSession</string>
+    <string name="facebook_app_id">126874488152417</string>
+    <string name="fb_login_protocol_scheme">fb126874488152417</string>
+    <string name="foto_do_perfil">Foto do perfil</string>
+    <string name="sair"><u>Sair</u></string>
+</resources>
