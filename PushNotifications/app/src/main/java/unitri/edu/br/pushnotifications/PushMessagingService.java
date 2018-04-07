@@ -1,9 +1,11 @@
 package unitri.edu.br.pushnotifications;
 
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
@@ -29,6 +31,8 @@ public class PushMessagingService extends FirebaseMessagingService {
     JSONObject jsonObject;
 
     String NOTIFICATION_CHANNEL_ID = "CHANNEL_01";
+    String NOTIFICATION_CHANNEL_DESCRIPTION = "CHANNEL";
+
 
     /**
      * Get the push notification event
@@ -97,7 +101,11 @@ public class PushMessagingService extends FirebaseMessagingService {
                         PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_ONE_SHOT);
 
         Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_ID);
+
+        NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
 
@@ -109,16 +117,26 @@ public class PushMessagingService extends FirebaseMessagingService {
             notificationBuilder.setSmallIcon(R.mipmap.ic_launcher);
         }
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+
+            NotificationChannel notificationChannel = new NotificationChannel(NOTIFICATION_CHANNEL_ID, "NOTIFICATIONS", NotificationManager.IMPORTANCE_DEFAULT);
+
+            notificationChannel.setDescription(NOTIFICATION_CHANNEL_DESCRIPTION);
+            notificationChannel.enableLights(true);
+            notificationChannel.setLightColor(Color.RED);
+            notificationChannel.setVibrationPattern(new long[]{0, 1000, 500, 1000});
+            notificationChannel.enableVibration(true);
+            notificationManager.createNotificationChannel(notificationChannel);
+        }
+
         notificationBuilder.setContentTitle(title);
         notificationBuilder.setContentText(body);
         notificationBuilder.setAutoCancel(true);
         notificationBuilder.setSound(defaultSoundUri);
         notificationBuilder.setPriority(NotificationCompat.PRIORITY_HIGH);
-        notificationBuilder.setVibrate(new long[] { 700, 700});
+        notificationBuilder.setVibrate(new long[]{700, 700});
         notificationBuilder.setContentIntent(pendingIntent);
 
-        NotificationManager notificationManager =
-                (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         notificationManager.notify(notifyID, notificationBuilder.build());
     }
 }
