@@ -23,7 +23,7 @@ Materiais utilizados na disciplina de programação para dispositivos móveis do
 
 **Dicas para Otimização da Compilação**
 
-- gradle.properties [gradle.properties] (https://github.com/viniciusdepaula/aulas-pmob/blob/master/gradle.properties)
+- gradle.properties [gradle.properties](https://github.com/viniciusdepaula/aulas-pmob/blob/master/gradle.properties)
 
 **Links auxiliares**
 
