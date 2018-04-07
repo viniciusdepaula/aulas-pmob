@@ -1,0 +1,45 @@
+{
+	"info": {
+		"name": "FCM",
+		"_postman_id": "859da865-6c3f-6434-b905-8df8209a772e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://fcm.googleapis.com/fcm/send copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "key=AIzaSyDfofpyhKc8pmA3sr3wsBD0uLOZxZedo6c"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"to\": \"feoG9dg2__8:APA91bEfyMZB_dz83LgmT3S0Nf5JR-B4uRUwLl8JZOIbhVspd0E-COmNR4iQC6lEk8QMJeulzr_apcv1A0x7y-e-vxtTIPG2l5Wdint3tDyyoFiJR21139u8yIlhSs5_hKFfJcqP6j9J\",\n  \"priority\": \"high\",\n\n  \"data\": {\n    \"body\": \"Compre agora em 3x sem juros\",\n    \"title\": \"Oferta boa!\"\n  }\n}"
+				},
+				"url": {
+					"raw": "https://fcm.googleapis.com/fcm/send",
+					"protocol": "https",
+					"host": [
+						"fcm",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"fcm",
+						"send"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
