@@ -17,6 +17,10 @@ Materiais utilizados na disciplina de programação para dispositivos móveis do
 
 - Lista de Exercícios I [PMOB-ListadeExercíciosI.pdf](https://github.com/viniciusdepaula/aulas-pmob/blob/master/pdf/PMOB-ListadeExerc%C3%ADciosI.pdf)
 
+**Trabalho Final**
+
+- Trabalho Final da Disciplina [PMOB-TrabalhoFinal.pdf](https://github.com/viniciusdepaula/aulas-pmob/blob/master/pdf/PMOB-TrabalhoFinal.pdf)
+
 **Links auxiliares**
 
 Exportação de ícones
