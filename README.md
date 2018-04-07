@@ -21,6 +21,10 @@ Materiais utilizados na disciplina de programação para dispositivos móveis do
 
 - Trabalho Final da Disciplina [PMOB-TrabalhoFinal.pdf](https://github.com/viniciusdepaula/aulas-pmob/blob/master/pdf/PMOB-TrabalhoFinal.pdf)
 
+**Dicas para Otimização da Compilação**
+
+- [gradle.properties] (https://github.com/viniciusdepaula/aulas-pmob/blob/master/gradle.properties)
+
 **Links auxiliares**
 
 Exportação de ícones
