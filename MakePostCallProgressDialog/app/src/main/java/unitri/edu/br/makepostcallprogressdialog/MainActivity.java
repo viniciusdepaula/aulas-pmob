@@ -117,6 +117,10 @@ public class MainActivity extends AppCompatActivity {
         };
 
         queue.add(jsonObjReq);
+        showProgressDialog();
+    }
+
+    private void showProgressDialog() {
         progressDialog = new ProgressDialog(MainActivity.this);
         progressDialog.setMessage("Por favor, aguarde");
         progressDialog.show();
