@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1015744323338",
+    "firebase_url": "https://notificacoes-remotas.firebaseio.com",
+    "project_id": "notificacoes-remotas",
+    "storage_bucket": "notificacoes-remotas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015744323338:android:a6dc64235db14e78",
+        "android_client_info": {
+          "package_name": "unitri.edu.br.pushnotifications"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1015744323338-kf5qtsnkc822vdg450hejiisnaicesut.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvSyt2XAJaDoqU21XMBWg04_gCYA-4mx0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
