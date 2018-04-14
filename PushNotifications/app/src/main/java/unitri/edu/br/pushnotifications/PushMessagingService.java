@@ -5,6 +5,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.media.RingtoneManager;
 import android.net.Uri;
@@ -15,17 +16,19 @@ import android.util.Log;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
+import com.squareup.picasso.Picasso;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.IOException;
 import java.util.Map;
 import java.util.Random;
 
 public class PushMessagingService extends FirebaseMessagingService {
 
     static String TAG = MainActivity.class.getName();
-    String body, title = null;
+    String body, image, title = null;
     Random random = new Random();
     int notifyID = random.nextInt(9999 - 1000) + 1000;
     JSONObject jsonObject;
@@ -87,6 +90,12 @@ public class PushMessagingService extends FirebaseMessagingService {
                 body = jsonObject.getString("body");
                 intent.putExtra("EXTRA_BODY", body);
             }
+            if (!jsonObject.isNull("body")) {
+
+                image = jsonObject.getString("image");
+                intent.putExtra("EXTRA_IMG", image);
+            }
+
 
         } catch (JSONException e) {
 
@@ -123,7 +132,7 @@ public class PushMessagingService extends FirebaseMessagingService {
 
             notificationChannel.setDescription(NOTIFICATION_CHANNEL_DESCRIPTION);
             notificationChannel.enableLights(true);
-            notificationChannel.setLightColor(Color.RED);
+            notificationChannel.setLightColor(Color.WHITE);
             notificationChannel.setVibrationPattern(new long[]{0, 1000, 500, 1000});
             notificationChannel.enableVibration(true);
             notificationManager.createNotificationChannel(notificationChannel);
@@ -136,6 +145,19 @@ public class PushMessagingService extends FirebaseMessagingService {
         notificationBuilder.setPriority(NotificationCompat.PRIORITY_HIGH);
         notificationBuilder.setVibrate(new long[]{700, 700});
         notificationBuilder.setContentIntent(pendingIntent);
+
+
+
+        try {
+            Bitmap bitmap = Picasso.with( this ).load( image ).get();
+            notificationBuilder.setLargeIcon(bitmap);
+            notificationBuilder.setStyle( new NotificationCompat.BigPictureStyle().bigPicture( bitmap ));
+        }
+        catch (IOException e) {
+            Log.e(TAG, "Error getting image from URL " +e);
+        }
+
+
 
         notificationManager.notify(notifyID, notificationBuilder.build());
     }
