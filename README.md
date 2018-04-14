@@ -12,7 +12,7 @@ Materiais utilizados na disciplina de programação para dispositivos móveis do
 - Slides [PMOB-3.1-PMOB-3.1-ComponentesdeTela.pdf](https://github.com/viniciusdepaula/aulas-pmob/blob/master/pdf/PMOB-3.1-ComponentesdeTela.pdf) - Componentes de Tela
 - Slides [PMOB-4.0-PMOB-4.0-ChamadaAPIs.pdf](https://github.com/viniciusdepaula/aulas-pmob/blob/master/pdf/PMOB-4.0-ChamandoAPIs.pdf) - Chamada de APIs no Android
 - Slides [PMOB-5.0-LoginSocialFacebook.pdf](https://github.com/viniciusdepaula/aulas-pmob/blob/master/pdf/PMOB-5.0-LoginSocialFacebook.pdf) - Login Social no Facebook
-- Slides [PMOB-6.0-Notificações.pdf](https://github.com/viniciusdepaula/aulas-pmob/blob/master/pdf/PMOB-6.0-Notificações.pdf) - Notificações e Firebase
+- Slides [PMOB-6.0-Notificações.pdf](https://github.com/viniciusdepaula/aulas-pmob/blob/master/pdf/PMOB-6.0-Notifica%C3%A7%C3%B5es.pdf) - Notificações e Firebase
 - Slides [PMOB-6.1-Analytics.pdf](https://github.com/viniciusdepaula/aulas-pmob/blob/master/pdf/PMOB-6.1-Analytics.pdf) - Google Analytics
 - Slides [PMOB-6.2-Mapas.pdf](https://github.com/viniciusdepaula/aulas-pmob/blob/master/pdf/PMOB-6.2-Mapas.pdf) - Google Maps
 
