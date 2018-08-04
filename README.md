@@ -43,6 +43,6 @@ Documentação Open Weather (apresentação de imagem)
 https://openweathermap.org/weather-conditions
 
 Integração com banco de dados
-https://developer.android.com/training/data-storage/sqlite
-https://developer.android.com/training/data-storage/room/
+- https://developer.android.com/training/data-storage/sqlite
+- https://developer.android.com/training/data-storage/room/
 
