@@ -46,3 +46,6 @@ Integração com banco de dados
 - https://developer.android.com/training/data-storage/sqlite
 - https://developer.android.com/training/data-storage/room/
 
+Inspirações para tela de login
+- https://br.pinterest.com/timoa/mobile-ui-logins/?lp=true
+
