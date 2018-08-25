@@ -6,15 +6,18 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text="Selecione a data desejada para o almoço"
-        android:paddingTop="5dp"/>
-
-    <DatePicker
-        android:id="@+id/datePicker"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#d4d4d4"
+        android:hint="Informe a data de agendamento"
+        android:padding="15dp"
+        android:textColor="#897"
+        android:textColorHint="#090"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:onClick="callDatePicker"/>
 
 </LinearLayout>

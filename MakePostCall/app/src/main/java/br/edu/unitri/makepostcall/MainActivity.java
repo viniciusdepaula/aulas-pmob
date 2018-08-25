@@ -92,14 +92,14 @@ public class MainActivity extends AppCompatActivity {
                 return params;
             }
 
-            /*@Override
+            @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
 
                 Map<String, String> headers = new HashMap<String, String>();
                 String auth = "Basic MzgxNTc5ZmEtZDI0MC00Mzg3LTkyNTMtZWY2YjgwYTdhMWEwOmM4NDM4M2Y0LTJiMDgtNGJiYy04MjQwLWI0YjQ5YTFlYWQzZQ==";
                 headers.put("Authorization", auth);
                 return headers;
-            }*/
+            }
         };
 
         queue.add(jsonObjReq);

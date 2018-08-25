@@ -20,11 +20,6 @@ public class ActivityA extends AppCompatActivity {
 
         AnalyticsApplication application = (AnalyticsApplication) getApplication();
         mTracker = application.getDefaultTracker();
-
-        //AppController application = (AppController) getActivity().getApplication();
-        //Tracker mTracker = application.getDefaultTracker();
-        //mTracker.setScreenName(description);
-        //mTracker.send(new HitBuilders.ScreenViewBuilder().build());
     }
 
     @Override

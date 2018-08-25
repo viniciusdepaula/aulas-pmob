@@ -54,22 +54,25 @@ public class CurrentLocationActivity extends AppCompatActivity implements
     }
 
     private void enableMyLocationIfPermitted() {
-        if (ContextCompat.checkSelfPermission(this,
-                Manifest.permission.ACCESS_FINE_LOCATION)
-                != PackageManager.PERMISSION_GRANTED) {
+
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+
             ActivityCompat.requestPermissions(this,
                     new String[]{Manifest.permission.ACCESS_FINE_LOCATION,
                             Manifest.permission.ACCESS_FINE_LOCATION},
                     LOCATION_PERMISSION_REQUEST_CODE);
+
         } else if (mMap != null) {
+
             mMap.setMyLocationEnabled(true);
         }
     }
 
     private void showDefaultLocation() {
+
         Toast.makeText(this, "Permissão para obter a localização não concedida, " +
-                        "apresentando uma localização pré-definida",
-                Toast.LENGTH_SHORT).show();
+                        "apresentando uma localização pré-definida", Toast.LENGTH_SHORT).show();
+
         LatLng redmond = new LatLng(47.6739881, -122.121512);
         mMap.moveCamera(CameraUpdateFactory.newLatLng(redmond));
     }
@@ -78,11 +81,15 @@ public class CurrentLocationActivity extends AppCompatActivity implements
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
                                            @NonNull int[] grantResults) {
         switch (requestCode) {
+
             case LOCATION_PERMISSION_REQUEST_CODE: {
-                if (grantResults.length > 0
-                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
                     enableMyLocationIfPermitted();
+
                 } else {
+
                     showDefaultLocation();
                 }
                 return;

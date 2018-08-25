@@ -57,8 +57,6 @@ public class MainActivity extends AppCompatActivity {
         file = Uri.fromFile(getOutputMediaFile());
         intent.putExtra(MediaStore.EXTRA_OUTPUT, file);
 
-
-
         startActivityForResult(intent, 100);
     }
 

@@ -64,8 +64,7 @@ public class UserProfileActivity extends AppCompatActivity {
             profile_pic_data = new JSONObject(response.get("picture").toString());
             profile_pic_url = new JSONObject(profile_pic_data.getString("data"));
 
-            Picasso.with(this).load(profile_pic_url.getString("url"))
-                    .into(userPicture);
+            Picasso.with(this).load(profile_pic_url.getString("url")).into(userPicture);
 
         } catch(Exception e){
 
