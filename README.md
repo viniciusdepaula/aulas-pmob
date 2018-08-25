@@ -49,3 +49,8 @@ Integração com banco de dados
 Inspirações para tela de login
 - https://br.pinterest.com/timoa/mobile-ui-logins/?lp=true
 
+Sites para mocks de APIs
+- https://www.mockable.io/
+- https://www.mocky.io/
+
+
